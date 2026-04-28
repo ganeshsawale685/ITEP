@@ -1,0 +1,27 @@
+<!-- 
+    1
+   1*1
+  1***1
+ 1*****1
+111111111
+ 
+-->
+
+<pre>
+<script>
+for(let i =1;i<=5 ;i++){
+for(let sp = 5 ; sp>i-1 ;sp--){
+    document.write(" ")
+}
+
+for(let j = 1;j<=i;j++){
+   if(j == 1 || j ==i || i==5){
+    document.write("1 ")
+   }else{
+    document.write("  ")
+   }
+}
+document.write("<br>")
+}
+</script>
+</pre>

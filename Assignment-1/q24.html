@@ -1,0 +1,11 @@
+<!-- 24.	How many bricks each 25 cm long, 10 cm wide and 7.5 cm thick will be required for a wall 20 m long, 2 m high and 0.75 m thick? If bricks sell at $900 per thousand what will it cost to build the wall? -->
+<script>
+var wallVolume = 20 * 2 * 0.75;
+var brickVolume = 0.25 * 0.1 * 0.075; // cm to m 
+
+var bricks = wallVolume / brickVolume;
+var cost = (bricks / 1000) * 900;
+
+document.write("Bricks required = " + bricks + "<br>");
+document.write("Total cost = $" + cost);
+</script>

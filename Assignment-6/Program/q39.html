@@ -1,0 +1,35 @@
+<!-- 39) WAP to check whether entered number is strong or not -->
+<!-- A strong number (or factorion) is a positive integer that equals the sum of the factorials of its individual digits, such as 1, 2, 145 (1!+4!+5! = 1+24+120 = 145) -->
+
+ <script>
+    let n = prompt("Enter a number")*1;
+    let val = n;
+    let sum = 0;
+
+
+    while(n>0){
+        let r = n%10;
+        let fact = 1;
+        while(r !=0){
+             fact= fact*r;
+             r--;
+        }
+        sum+=fact
+       
+        n=parseInt(n/10)
+    }
+
+    if(sum === val){
+        document.write("The number is Strong ")
+    }else{
+        document.write("The number is not Strong ")
+    }
+document.write("By For loop<br>");
+let t=n, s=0;
+for(;n>0;n=parseInt(n/10)){
+    let r=n%10, f=1;
+    for(let i=1;i<=r;i++) f*=i;
+    s+=f;
+}
+document.write(s==t?"Strong":"Not Strong");
+</script>

@@ -1,0 +1,38 @@
+<!-- 57) WAP to print all the prime numbers between two entered numbers -->
+
+<script>
+    let num1 = prompt("Enter a number") * 1;
+    let num2 = prompt("Enter a number") * 1;
+
+    while (num1 <= num2) {
+
+        let i = 2;
+        let prime = true;
+        while (i < num1) {
+            if (num1 % i == 0) {
+                prime = false;
+                break;
+            }
+            i++;
+        }
+
+        if (prime) {
+            document.write("<br>Number " +num1 +" is Prime");
+        }
+        num1++;
+
+    }
+
+    document.write("By For loop<br>");
+let a=prompt("Enter start");
+let b=prompt("Enter end");
+
+for(let i=a;i<=b;i++){
+    let c=0;
+    for(let j=1;j<=i;j++){
+        if(i%j==0) c++;
+    }
+    if(c==2) document.write(i+" ");
+}
+
+</script>

@@ -1,0 +1,19 @@
+<!-- Q.2 Find minimum and maximum element in array -->
+
+<script>
+    let arr = [5,2,6,12,9,10];
+    let min = Infinity; // plus infinity
+    let max = -Infinity; // minus infinity 
+
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i] > max){
+            max = arr[i];
+        }else if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+
+    document.write("<br> Max number in array : "+max)
+    document.write("<br>Min number in array :"+min)
+
+</script>

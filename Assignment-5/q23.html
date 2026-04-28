@@ -1,0 +1,16 @@
+<!-- Write a program to validate user input type using switch. -->
+
+<script>
+    let input = prompt("Enter any value");
+    let type = typeof input;
+
+    switch (type) {
+        case "number":document.write("You entered a Number");break;
+
+        case "string":document.write("You entered a String");break;
+
+        case "boolean":document.write("You entered a Boolean");break;
+
+        default:document.write("Unknown data type");
+    }
+</script>

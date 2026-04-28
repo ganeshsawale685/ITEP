@@ -1,0 +1,40 @@
+<!-- 49) WAP to find out all the perfect numbers between two entered numbers -->
+
+<script>
+    let num1 = prompt("Enter a number") * 1;
+    let num2 = prompt("Enter a number") * 1;
+
+    let a = num1 
+    let b = num2
+
+    while (num1 <= num2) {
+        let i = 1;
+        let val = num1;
+        let sum = 0
+        while (i <= num1) {
+            if (num1 % i == 0) {
+                sum += i;
+            }
+            i++;
+        }
+        
+        sum = sum - val;
+        
+        if (sum == val) {
+            document.write("Perfect Number between "+a+" and "+b +" = "+val +"<br>");
+        } 
+
+        num1++;
+    }
+
+    document.write("By For loop<br>");
+
+for(let i=a;i<=b;i++){
+    let sum=0;
+    for(let j=1;j<i;j++){
+        if(i%j==0) sum+=j;
+    }
+    if(sum==i) document.write(i+" ");
+}
+
+</script>

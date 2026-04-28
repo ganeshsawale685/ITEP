@@ -1,0 +1,27 @@
+<!-- 
+     1               
+    101            
+   10101         
+  1010101           
+ 101010101   
+10101010101
+ 
+-->
+
+<pre>
+<script>
+for(let i =1;i<=6 ;i++){
+for(let sp = 5 ; sp>i-1 ;sp--){
+    document.write(" ")
+}
+
+for(let j = 1;j<=2*i-1;j++){
+    if(j%2 !== 0){
+        document.write(1)
+    } else document.write(0)
+}
+document.write("<br>")
+}
+
+</script>
+</pre>

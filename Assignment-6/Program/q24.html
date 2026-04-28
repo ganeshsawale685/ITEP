@@ -1,0 +1,21 @@
+<!-- 24) 0	4	16	36	64	….. 1 2 3 4 5 6 7 8  -->
+
+<script>
+    let n = prompt("Enter a number")*1;
+    let i = 2;
+
+    document.write(0+"<br>");
+    while((n-1)!=0){
+        if(i % 2 == 0){
+            document.write(i*i+"<br>");
+           i++;
+        }
+        i++;
+        n--;
+    }
+
+    document.write("By For loop<br>");
+for(let i=0;i<=8;i+=2){
+    document.write(i*i+" ");
+}
+</script>

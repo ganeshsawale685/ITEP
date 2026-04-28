@@ -1,0 +1,31 @@
+
+
+<!-- 43) WAP to convert binary number into decimal number -->
+
+<script>
+    //1000 ->> 8;
+    let binNum = prompt("Enter Binary Number")*1;
+    let val = binNum;
+    let pow = 0;
+    let decNum = 0;
+
+    while(binNum >0 ){
+        let r = binNum%10;
+        decNum += r * Math.pow(2, pow)
+        binNum = parseInt(binNum/10);
+        pow++;
+    }
+    document.write(" Binary Number = "+val +"\n Decimal Number = "+decNum);
+
+
+    document.write("By For loop<br>");
+let n=prompt("Enter binary number");
+let dec=0, base=1;
+
+for(;n>0;n=parseInt(n/10)){
+    dec += (n%10)*base;
+    base*=2;
+}
+document.write("Decimal = "+dec);
+
+</script>

@@ -1,0 +1,39 @@
+<!-- 52) WAP to find out all the Armstrong numbers between two entered numbers -->
+
+
+<script>
+    let num1 = prompt("Enter a number")*1;
+    let num2 = prompt("Enter a number")*1;
+
+
+  while(num1<=num2){
+        let temp = num1;
+        let val = num1;
+        let sum = 0;
+      while(temp>0){
+        let remainder = temp%10;
+        sum+=(remainder*remainder*remainder);
+       
+        temp=parseInt(temp/10)
+    }
+    if(sum === val){
+        document.write(val+"<br>")
+    }
+
+    num1++;
+  }
+
+  document.write("By For loop<br>");
+let a=prompt("Enter start");
+let b=prompt("Enter end");
+
+for(let i=a;i<=b;i++){
+    let n=i, sum=0;
+    for(;n>0;n=parseInt(n/10)){
+        let r=n%10;
+        sum+=r*r*r;
+    }
+    if(sum==i) document.write(i+" ");
+}
+
+</script>

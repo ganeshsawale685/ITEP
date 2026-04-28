@@ -1,0 +1,17 @@
+<!-- 35) WAP to count number of digits -->
+ <script>
+    let n = prompt("Enter a number")*1;
+    let count =0;
+    while(n>0){
+        let remainder = n%10;
+        count++;
+        n=parseInt(n/10)
+    }
+    document.write("Count of Number :"+count);
+document.write("By For loop<br>");
+let c=0;
+for(;n>0;n=parseInt(n/10)){
+    c++;
+}
+document.write(c);
+</script>

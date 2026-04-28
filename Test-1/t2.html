@@ -1,0 +1,32 @@
+<!-- 🔹 Scenario 2: ATM Withdrawal System
+
+An ATM allows withdrawal only if:
+
+Amount is a multiple of 100
+
+Minimum balance of ₹500 must remain after withdrawal
+
+Questions:
+
+a) Write a function withdraw(balance, amount) that returns the updated balance or an error message.
+b) Explain how nested if statements are useful here. -->
+
+
+<script>
+class ATM{
+    withdraw(balance,amount){
+        if(amount %100 == 0){
+            if(balance-amount >= 500){
+                return balance-amount;
+            }else{
+                return "Minimum balance of ₹500 must remain "
+            }
+        }else{
+            return" Amount must be a multiple of 100"
+        }
+    }
+}
+
+let atm = new ATM;
+document.write(atm.withdraw(3000,1000))
+</script>

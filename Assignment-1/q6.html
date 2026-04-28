@@ -1,0 +1,13 @@
+<!-- 6.Find the area of a triangle, sides of which are 10 cm and 9 cm and the perimeter 36 cm. -->
+ 
+<script>
+var firstSide = 10;
+var secondSide = 9;
+var perimeter = 36;
+var thirdSide = perimeter - firstSide - secondSide
+
+var s = perimeter / 2;
+var area = Math.sqrt(s * (s - firstSide) * (s - secondSide) * (s - thirdSide));
+
+document.write("Area = " + area);
+</script>

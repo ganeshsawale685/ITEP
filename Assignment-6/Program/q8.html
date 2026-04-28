@@ -1,0 +1,28 @@
+<!-- 8) WAP to print Fibonacci series. -->
+
+<script>
+    let n = prompt("Enter a number")*1;
+ 
+    let a = 0; 
+    let b = 1; 
+    document.write(a+"<br>")
+    document.write(b+"<br>")
+
+    while((n-2)!=0){
+        let c = a+b;
+        document.write(c+"<br>")
+        a = b;
+        b = c;
+        n--;
+
+    }
+
+    document.write("By For loop<br>");
+
+for(let i=1;i<=n;i++){
+    document.write(a+" ");
+    let c=a+b;
+    a=b; b=c;
+}
+
+</script>

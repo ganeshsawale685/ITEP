@@ -1,0 +1,18 @@
+<!-- W.A.P to check whether the traingle is equilateral, scalene, or isosceles. Hint: - Isosceles triangle: In geometry, an isosceles triangle is a triangle that has two sides of equal length. Equilateral triangle: In geometry, an equilateral triangle is a triangle in which all three sides are equal. Scalene triangle: A scalene triangle is a triangle that has three unequal sides. 
+  -->
+
+  <script>
+    var side1 = prompt("Enter first side of triangle") * 1;
+    var side2 = prompt("Enter second side of triangle") * 1;
+    var side3 = prompt("Enter third side of triangle") * 1;
+
+    if (side1 === side2 && side2 === side3) {
+        document.write("The triangle is Equilateral");
+    } 
+    else if (side1 === side2 || side2 === side3 || side1 === side3) {
+        document.write("The triangle is Isosceles");
+    } 
+    else {
+        document.write("The triangle is Scalene");
+    }
+</script>

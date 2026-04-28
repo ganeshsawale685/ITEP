@@ -1,0 +1,27 @@
+<!-- 54) WAP to print all the even numbers between two entered numbers -->
+
+<script>
+    let num1 = prompt("Enter a number") * 1;
+    let num2 = prompt("Enter a number") * 1;
+
+    document.write("The even number between "+num1 +" and "+ num2 +"<br>");
+    while(num1 <= num2){
+        
+        if (num1 % 2 == 0) {
+            document.write(num1 + "<br>");
+
+        }
+      
+        num1++;
+    
+    }
+
+    document.write("By For loop<br>");
+let a=prompt("Enter start");
+let b=prompt("Enter end");
+
+for(let i=a;i<=b;i++){
+    if(i%2==0) document.write(i+" ");
+}
+    
+</script>

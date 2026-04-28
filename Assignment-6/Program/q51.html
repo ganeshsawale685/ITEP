@@ -1,0 +1,21 @@
+<!-- 51) WAP to reverse all the numbers between two entered numbers -->
+
+<script>
+    let a = prompt("Enter a number")*1;
+    let b = prompt("Enter a number")*1;
+
+    while(b>=a){
+        document.write(b+"<br>");
+        b--;
+    }
+
+    document.write("By For loop<br>");
+
+for(let i=a;i<=b;i++){
+    let n=i, r=0;
+    for(;n>0;n=parseInt(n/10)){
+        r=r*10+(n%10);
+    }
+    document.write(r+" ");
+}
+</script>

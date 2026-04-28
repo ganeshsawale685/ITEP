@@ -1,0 +1,5 @@
+ch=input()
+a=int(input());b=int(input())
+if ch=='+': print(a+b)
+elif ch=='>': print("Greater:", a if a>b else b)
+elif ch=='==': print("Equal" if a==b else "Not Equal")

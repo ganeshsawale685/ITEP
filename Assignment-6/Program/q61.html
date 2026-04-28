@@ -1,0 +1,29 @@
+<!-- 61) WAP to find out all the leap years between two entered years -->
+
+<script>
+    let firstYear = prompt("Enter starting year") * 1;
+    let endYear = prompt("Enter ending year") * 1;
+
+    while (firstYear <= endYear) {
+
+        if (
+            (firstYear % 400 == 0) ||
+            (firstYear % 4 == 0 && firstYear % 100 != 0)
+        ) {
+            document.write(firstYear + "<br>");
+        }
+
+        firstYear++;
+    }
+
+    document.write("By For loop<br>");
+    let start = prompt("Enter start year");
+    let end = prompt("Enter end year");
+
+    for (let year = start; year <= end; year++) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+            document.write(year + " ");
+        }
+    }
+
+</script>

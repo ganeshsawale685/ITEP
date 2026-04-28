@@ -1,0 +1,17 @@
+<!-- 4. WAP to find an element in array. -->
+
+<script>
+let n = prompt("Enter element")
+let arr = [10,20,30,40,"Rahul" ,"Aman",true];
+let find = false;
+for(let i of arr ){
+    if(n == i){
+        find=true;
+        document.write("Element is found :"+i);
+        break;
+    }
+}
+if(!find){
+    document.write("Element is not found : "+n)
+}
+</script>

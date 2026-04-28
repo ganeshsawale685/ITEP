@@ -1,0 +1,24 @@
+<!-- 46) WAP to find out the sum of first and last digit of a user entered number  -->
+
+<script>
+    let num = prompt("Enter a number")*1;
+    let lastDigit = num%10;
+    let firstDigit =0;
+    while(num>0){
+        let r = num%10;
+        firstDigit = r;
+        num = parseInt(num/10);
+
+    }
+
+    document.write("Sum of first and last digit "+(firstDigit+lastDigit));
+    document.write("By For loop<br>");
+let n=prompt("Enter number");
+let last=n%10, first;
+
+for(;n>=10;n=parseInt(n/10)){}
+first=n;
+
+document.write("Sum = "+(first+last));
+</script>
+

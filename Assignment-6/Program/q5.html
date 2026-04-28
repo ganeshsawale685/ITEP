@@ -1,0 +1,19 @@
+<!-- 5) WAP to find out the factorial of a number. -->
+ <script>
+    let n = prompt("Enter a number");
+     let num = n;
+    let factorial = 1;
+    while(n!=0){
+        factorial = factorial * n;
+        n--;
+    }
+    document.write("Factorial of "+ num + " ="+factorial)
+
+    document.write("By For loop<br>");
+let  fact=1;
+for(let i=1;i<=n;i++){
+    fact*=i;
+}
+document.write("Factorial = "+fact);
+
+ </script>

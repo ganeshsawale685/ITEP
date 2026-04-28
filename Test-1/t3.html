@@ -1,0 +1,36 @@
+<!-- 🔹 Scenario 3: Student Result Processing
+
+A student passes if:
+
+Marks ≥ 40 in all subjects
+
+Questions:
+
+a) Write a function isPass(marksArray) that returns "Pass" or "Fail".
+b) Which loop will you use and why? -->
+
+<script>
+    let english = prompt("Enter English Marks")*1;
+    let math = prompt("Enter Math Marks")*1;
+    let science = prompt("Enter Science Marks")*1;
+    let chemistry = prompt("Enter Chemistry Marks")*1;
+
+    let marksArray = [english,math,science,chemistry];
+    //[40,60,70,60]
+    let pass = true;
+
+    for(let marks in marksArray){
+        console.log("<br>"+marks);
+        if(marksArray[marks] <=40){
+            pass = false
+           
+        }
+    }
+
+    if(pass){
+        document.write("Pass")
+    }else{
+        document.write("Fail")
+    }
+
+</script>

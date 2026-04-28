@@ -1,0 +1,26 @@
+<!-- 37) WAP to check whether entered number is palindrome or not -->
+ <!-- A palindrome number is a number that reads the same forwards and backwards, such as 121 or 1331 -->
+<script>
+    let num = prompt("Enter a number") * 1;
+    let original = num;
+    let rev = 0;
+
+    while (num > 0) {
+        let r = num % 10;
+        rev = rev * 10 + r;
+        num = parseInt(num / 10);
+    }
+
+    if (original == rev) {
+        document.write("Palindrome Number");
+    } else {
+        document.write("Not a Palindrome Number");
+    }
+
+    document.write("By For loop<br>");
+let n=prompt("Enter number"), t=n, r=0;
+for(;n>0;n=parseInt(n/10)){
+    r=r*10+(n%10);
+}
+document.write(t==r?"Palindrome":"Not Palindrome");
+</script>

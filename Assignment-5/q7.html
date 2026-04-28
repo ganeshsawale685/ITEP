@@ -1,0 +1,15 @@
+<!-- Write a program to display grade based on marks using switch. -->
+
+<script>
+    let marks = prompt("Enter a marks")*1;
+    document.write("Marks :"+marks)
+
+    switch(true){
+        case (marks>80 && marks<=100) : document.write("<br>Grade :A"); break;
+        case (marks>60 && marks<=80) : document.write("<br>Grade : B"); break;
+        case (marks>40 && marks<=60) : document.write("<br>Grade :C"); break;
+        case (marks>25 && marks<=40) : document.write("<br>Grade :D"); break;
+        default : document.write("Fail");
+    }
+
+</script>

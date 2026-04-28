@@ -1,0 +1,20 @@
+<!-- Write a program to calculate electricity bill slab-wise using switch. -->
+
+<script>
+    let units = prompt("Enter electricity units") * 1;
+    
+
+    switch (true) {
+        case (units >= 0 && units <= 100):document.write("Bill = Rs " +units * 2) ;break;// 2 rupee per unit
+
+        case (units >100 && units<= 200):document.write("Bill = Rs " +units * 3); break;// 3 rupee per unit
+
+        case (units>200 && units <= 300):document.write("Bill = Rs " +units * 4);break;// 4 rupee per unit
+
+        case (units > 300):document.write("Bill = Rs " +units * 5);break;;break; // 5 rupee per unit
+
+        default:document.write("Invalid units");
+    }
+
+    
+</script>

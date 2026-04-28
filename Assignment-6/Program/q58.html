@@ -1,0 +1,25 @@
+<!-- 58) WAP to convert decimal number into binary number without using array -->
+
+<script>
+    let decNum = prompt("Enter Number") * 1;
+    let binary = 0;
+    let place = 1;
+
+    while (decNum > 0) {
+        let r = decNum % 2;
+        binary = binary + (r * place);
+        place = place * 10;
+        decNum = parseInt(decNum / 2);
+    }
+
+    document.write("Binary Number = " + binary);
+
+    document.write("By For loop<br>");
+let n=prompt("Enter decimal number");
+let bin="";
+
+for(;n>0;n=parseInt(n/2)){
+    bin=(n%2)+bin;
+}
+document.write("Binary = "+bin);
+</script>

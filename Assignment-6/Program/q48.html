@@ -1,0 +1,32 @@
+<!-- 48) WAP to find out the factors of all the numbers between two entered numbers -->
+
+<script>
+    let a = prompt("Enter a number")*1;
+    let b = prompt("Enter a number")*1;
+    
+
+    while(a<=b){
+        document.write("<br>Factorial = "+a+"<br>")
+        let i = 1;
+       while(i<=a){
+         if(a%i == 0){
+            document.write(i)
+         }
+        i++;
+       }
+       document.write("<br>")
+       a++;
+        
+    }
+
+    document.write("By For loop<br>");
+
+
+for(let i=a;i<=b;i++){
+    document.write("<br>Factors of "+i+" : ");
+    for(let j=1;j<=i;j++){
+        if(i%j==0) document.write(j+" ");
+    }
+}
+
+</script>

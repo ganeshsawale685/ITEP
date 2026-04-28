@@ -1,0 +1,15 @@
+<!-- Java program to check whether the triangle is valid or not if angles are given. Hint:- The angle property of the triangle says that the sum of all three angles should be equal to 180. -->
+
+<script>
+    var angle1 = prompt("Enter first angle of triangle") * 1;
+    var angle2 = prompt("Enter second angle of triangle") * 1;
+    var angle3 = prompt("Enter third angle of triangle") * 1;
+
+    var sum = angle1 + angle2 + angle3;
+
+    if (sum === 180 ) {
+        document.write("The triangle is valid");
+    } else {
+        document.write("The triangle is not valid");
+    }
+</script>

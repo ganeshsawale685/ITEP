@@ -1,0 +1,42 @@
+<!--  Write a Java program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer.          Calculate percentage and grade according to following: 
+	Percentage >= 90% : Grade A 
+	Percentage >= 80% : Grade B 
+	Percentage >= 70% : Grade C 
+	Percentage >= 60% : Grade D 
+	Percentage >= 40% : Grade E 
+	Percentage < 40% : Grade F -->
+
+    <script>
+    var physics = prompt("Enter marks in Physics") * 1;
+    var chemistry = prompt("Enter marks in Chemistry") * 1;
+    var biology = prompt("Enter marks in Biology") * 1;
+    var mathematics = prompt("Enter marks in Mathematics") * 1;
+    var computer = prompt("Enter marks in Computer") * 1;
+
+    var totalMarks = physics + chemistry + biology + mathematics + computer;
+    var percentage = (totalMarks / 500) * 100;
+    var grade;
+
+    if (percentage >= 90) {
+        grade = "A";
+    } 
+    else if (percentage >= 80) {
+        grade = "B";
+    } 
+    else if (percentage >= 70) {
+        grade = "C";
+    } 
+    else if (percentage >= 60) {
+        grade = "D";
+    } 
+    else if (percentage >= 40) {
+        grade = "E";
+    } 
+    else {
+        grade = "F";
+    }
+
+    document.write("Total Marks = " + totalMarks + "<br>");
+    document.write("Percentage = " + percentage.toFixed(2) + "%<br>");
+    document.write("Grade = " + grade);
+</script>

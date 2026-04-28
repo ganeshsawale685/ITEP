@@ -1,0 +1,47 @@
+<!-- 53) WAP to print all the strong numbers between two entered numbers -->
+
+<script>
+    let num1 = prompt("Enter a number") * 1;
+    let num2 = prompt("Enter a number") * 1;
+   
+
+    while (num1 <= num2) {
+        let temp = num1
+        let val = num1;
+        let sum = 0;
+
+        while (temp > 0) {
+            let r = temp % 10;
+            let fact = 1;
+            while (r != 0) {
+                fact = fact * r;
+                r--;
+            }
+            sum += fact
+
+            temp = parseInt(temp / 10)
+        }
+
+        if (sum === val) {
+            document.write(val+"<br>")
+        }
+        num1++;
+    }
+
+
+    document.write("By For loop<br>");
+let a=prompt("Enter start");
+let b=prompt("Enter end");
+
+for(let i=a;i<=b;i++){
+    let n=i, sum=0;
+    for(;n>0;n=parseInt(n/10)){
+        let r=n%10, f=1;
+        for(let j=1;j<=r;j++) f*=j;
+        sum+=f;
+    }
+    if(sum==i) document.write(i+" ");
+}
+
+
+</script>

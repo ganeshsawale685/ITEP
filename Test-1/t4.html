@@ -1,0 +1,35 @@
+<!-- 🔹 Scenario 4: Electricity Bill Calculation
+
+An electricity board charges:
+
+First 100 units → ₹2/unit
+
+Next 100 units → ₹3/unit
+
+Above 200 units → ₹5/unit
+
+Questions:
+
+a) Write a function calculateBill(units) to calculate total bill.
+b) Which control statement is best suited here? -->
+
+
+<script>
+    function calculateBill(units){
+        let charge = 0;
+        if(units <= 100){
+                charge = 2*units
+                document.write("Rs "+charge);
+        }
+        else if(units <=200){
+            charge = 3*units
+             document.write("Rs "+charge);
+        }
+        else{
+            charge = 5*units
+             document.write("Rs "+charge);
+        }
+    }
+
+    calculateBill(201)
+</script>

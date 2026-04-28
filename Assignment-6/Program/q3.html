@@ -1,0 +1,22 @@
+<!-- 3) WAP to find out the sum of N natural number. -->
+<script>
+    let n = prompt("Enter a number") * 1;
+    let i = 1;
+    let sum = 0;
+
+    while (n != 0) {
+        sum = sum + i;
+        i++;
+        n--;
+
+    }
+    document.write("Sum of n natural number =" + sum);
+
+    
+    document.write("By For loop<br>");
+    let suml =0;
+    for (let i = 1; i <= n; i++) {
+        suml += i;
+    }
+    document.write("Sum = " + suml);
+</script>

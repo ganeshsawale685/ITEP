@@ -1,0 +1,17 @@
+<!-- Write a program to perform currency conversion using switch. -->
+
+<script>
+    let currency = prompt("Select number to convert a amount in : \n 1  Indian Rupee To United States Dollar \n 2 Indian Rupee To Euro \n 3 Indian Rupee to Saudi Riyal ") *1;
+
+    if(currency === 1 || currency === 2 || currency === 3){
+        let amount = prompt("Enter the amount ")*1;
+        switch(currency){
+            case 1 : document.write("<br>Indian Rupee: Rs"+amount + "=" +"Doller : $"+ (amount * 0.011)); break;
+            case 2 : document.write("<br>Indian Rupee: Rs"+amount + "=" +"Euro : €"+ (amount *0.0095)); break;
+            case 3 : document.write("<br>Indian Rupee: Rs"+amount + "=" +"Riyal : SR"+ (amount * 0.042)); break;
+
+        }
+    }else{
+        document.write("Invalid Choice");
+    }
+</script>

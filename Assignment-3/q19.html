@@ -1,0 +1,36 @@
+
+<!-- WAP to exchange value to two variable with third variable and without third variable -->
+
+<script>
+    //With third variable
+    var a = prompt("Enter value of a") * 1;
+    var b = prompt("Enter value of b") * 1;
+    var temp;
+    document.write("<br>Before swapping:");
+    document.write("<br>a = " + a);
+    document.write("<br>b = " + b);
+    temp = a;
+    a = b;
+    b = temp;
+    document.write(" <br> With Third Variable <br>")
+    
+    document.write("<br>After swapping:");
+    document.write("<br>a = " + a);
+    document.write("<br>b = " + b);
+
+    document.write("<br>--------------------------------------------<br>")
+
+    //without third variable
+     document.write("Before swapping ");
+    document.write("<br>a = " + a);
+    document.write("<br>b = " + b);
+    a = a + b;
+    b = a - b;
+    a = a - b
+
+    document.write(" <br>Without Third Variable <br>");
+   
+    document.write("<br>After swapping:");
+    document.write("<br>a = " + a);
+    document.write("<br>b = " + b);
+</script>

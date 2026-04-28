@@ -1,0 +1,28 @@
+<!-- 34) WAP to check whether entered number is perfect or not -->
+
+<script>
+    let num = prompt("Enter a number")*1;
+    let i = 1;
+    let val = num;
+    let sum = 0
+ 
+    while(i<=num){
+        if(num%i == 0){
+            sum+=i;
+        }
+        i++;
+    }
+    sum = sum - val;
+    if(sum == val){
+        document.write("Perfect Number");
+    }else{
+        document.write("Not Perfect Number")
+    }
+
+    document.write("By For loop<br>");
+let n=prompt("Enter number"), suml=0;
+for(let i=1;i<n;i++){
+    if(n%i==0) suml+=i;
+}
+document.write(suml==n?"Perfect":"Not Perfect");
+</script>

@@ -1,0 +1,27 @@
+<!-- 18) 1	2	2	4	8	32	…… n terms -->
+
+<script>
+    let n = prompt("Enter a number")*1;
+    let a = 1
+    let b = 2
+
+    document.write(a+"<br>")
+    document.write(b+"<br>")
+
+    while((n-2)!=0){
+        let c = a*b;
+        document.write(c+"<br>")
+        a = b;
+        b = c;
+        n--;
+    }
+
+    document.write("By For loop<br>");
+
+document.write(a+" "+b+" ");
+for(let i=3;i<=n;i++){
+    let c=a*b;
+    document.write(c+" ");
+    a=b; b=c;
+}
+</script>

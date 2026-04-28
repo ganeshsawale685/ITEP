@@ -1,0 +1,12 @@
+<!-- . Find the area of a right angled triangle whose hypotenuse is 13 cm and one of its sides containing the right angle is 12 cm. Find the length of the other side. -->
+
+<script>
+var hyp = 13;
+var side1 = 12;
+
+var side2 = Math.sqrt(hyp * hyp - side1 * side1);
+var area = 0.5 * side1 * side2;
+
+document.write("Other side = " + side2);
+document.write("Area = " + area );
+</script>

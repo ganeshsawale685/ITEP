@@ -1,0 +1,28 @@
+<!-- 
+A
+AB
+A C
+A  D
+ABCDE
+ 
+-->
+
+<pre>
+<script>
+    
+    for (let i = 65; i <=69; i++) {
+        for (let j =65; j <= 69; j++) {
+            if (j == 65 || i == j || i == 69) {
+                document.write(String.fromCharCode(j));
+                
+            } else {
+                document.write(" ");
+                
+            }
+            
+        }
+
+        document.write("<br>")      
+    }
+</script>
+</pre>

@@ -1,0 +1,18 @@
+<!-- 32) A	b	C	d	E	f	G	h	…… n terms  -->
+
+<script>
+    // A = 65 , a = 117
+    let chlg = "A";
+    let chsm = "a";
+    let i = 0;
+    while(i<26){
+        if(i%2 ===0 ){
+            let code = chlg.charCodeAt()+i;
+            document.write(String.fromCharCode(code)+" ");
+        }else{
+             let code = chsm.charCodeAt()+i;
+            document.write(String.fromCharCode(code)+" ");
+        }
+        i++;
+    }
+</script>

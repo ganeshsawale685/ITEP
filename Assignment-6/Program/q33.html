@@ -1,0 +1,16 @@
+<!-- 33) WAP to print Alphabets in reversing order. -->
+
+<script>
+    let i = "Z";
+
+    while (i >= "A") {
+        document.write(i + " ");
+        i = String.fromCharCode(i.charCodeAt(0) - 1);
+    }
+
+
+    document.write("By For loop<br>");
+for(let i=90;i>=65;i--){
+    document.write(String.fromCharCode(i)+" ");
+}
+</script>

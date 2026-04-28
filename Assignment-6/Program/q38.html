@@ -1,0 +1,32 @@
+<!-- 38) WAP to check whether entered number is Armstrong or not -->
+<!-- An Armstrong number is a number that equals the sum of its own digits, each raised to the power of the total number of digits in the number. For example, 153 -->
+
+<script>
+    let n = prompt("Enter a three digit number")*1;
+    let val = n;
+    let sum = 0;
+
+
+    while(n>0){
+        let remainder = n%10;
+        sum+=(remainder*remainder*remainder);
+       
+        n=parseInt(n/10)
+    }
+
+    if(sum === val){
+        document.write("The number is Armstrong ")
+    }else{
+        document.write("The number is not Armstrong ")
+    }
+
+
+    document.write("By For loop<br>");
+let t=n, s=0;
+for(;n>0;n=parseInt(n/10)){
+    let r=n%10;
+    s+=r*r*r;
+}
+document.write(s==t?"Armstrong":"Not Armstrong");
+
+</script>

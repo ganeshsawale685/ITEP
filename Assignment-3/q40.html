@@ -1,0 +1,18 @@
+<!--  Write a Javascript program to calculate profit or loss.  -->
+
+<script>
+    var costPrice = prompt("Enter the Cost Price (CP)") * 1;
+    var sellingPrice = prompt("Enter the Selling Price (SP)") * 1;
+
+    if (sellingPrice > costPrice) {
+        var profit = sellingPrice - costPrice;
+        document.write("Profit = Rs " + profit);
+    } 
+    else if (costPrice > sellingPrice) {
+        var loss = costPrice - sellingPrice;
+        document.write("Loss = Rs " + loss);
+    } 
+    else {
+        document.write("No Profit, No Loss");
+    }
+</script>

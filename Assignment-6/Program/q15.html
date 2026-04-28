@@ -1,0 +1,17 @@
+<!-- 15) WAP to print alphabets in lowercase -->
+
+<script>
+  var ch = 'a';
+
+  while (ch <= 'z') {
+    document.write(ch + " ");
+    let code = ch.charCodeAt()+1;
+  
+    ch = String.fromCharCode(code);
+  }
+
+  document.write("By For loop<br>");
+for(let i=97;i<=122;i++){
+    document.write(String.fromCharCode(i)+" ");
+}
+</script>

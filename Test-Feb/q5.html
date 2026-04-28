@@ -1,0 +1,27 @@
+<!-- Q5. DOM (2 Marks)
+
+Write JavaScript code to:
+
+Select a button with id "btn"
+
+On click, change paragraph text (id "para") to "Hello Students" -->
+
+<html>
+
+<body>
+    <p id="para">Hii Student</p>
+    <button id="btn">Change</button>
+</body>
+
+<script>
+
+    let btn = document.getElementById("btn");
+    let para = document.getElementById("para");
+
+    btn.addEventListener("click", () => {
+        para.innerText = "Hello Student"
+    })
+
+</script>
+
+</html>

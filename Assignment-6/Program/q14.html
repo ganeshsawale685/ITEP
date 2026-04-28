@@ -1,0 +1,22 @@
+<!-- 14) WAP to print alphabets in uppercase 
+
+
+    # charCodeAt Convert String alphabet to ASCII value
+    # fromCharCode Convert ASCII value to string alphabet
+-->
+
+<script>
+  var ch = 'A';
+
+  while (ch <= 'Z') {
+    document.write(ch + " ");
+    let code = ch.charCodeAt()+1;
+    document.write(code+ "<br> ");
+    ch = String.fromCharCode(code);
+  }
+
+  document.write("By For loop<br>");
+for(let i=65;i<=90;i++){
+    document.write(String.fromCharCode(i)+" ");
+}
+</script>

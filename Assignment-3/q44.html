@@ -1,0 +1,34 @@
+<!-- 29. Write a program to input choice from user. If user enter ‘+’ as choice then calculate addition of 2 number. If Choice ‘>’ then check which number is greaterst. If choice is ‘==’ then check both number is equal or not. -->
+
+<script>
+    var num1 = prompt("Enter first number") * 1;
+    var num2 = prompt("Enter second number") * 1;
+    var choice = prompt("Enter your choice:\n'+' for Addition\n'>' to find greater number\n'==' to check equality");
+
+    if (choice === '+') {
+        var sum = num1 + num2;
+        document.write("Addition = " + sum);
+    } 
+    else if (choice === '>') {
+        if (num1 > num2) {
+            document.write(num1 + " is greater than " + num2);
+        } 
+        else if (num2 > num1) {
+            document.write(num2 + " is greater than " + num1);
+        } 
+        else {
+            document.write("Both numbers are equal");
+        }
+    } 
+    else if (choice === '==') {
+        if (num1 === num2) {
+            document.write("Both numbers are equal");
+        } 
+        else {
+            document.write("Numbers are not equal");
+        }
+    } 
+    else {
+        document.write("Invalid choice! Please enter '+', '>', or '=='");
+    }
+</script>

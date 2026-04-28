@@ -1,0 +1,5 @@
+a = int(input("Enter age1: "))
+b = int(input("Enter age2: "))
+c = int(input("Enter age3: "))
+print("Oldest:", max(a,b,c))
+print("Youngest:", min(a,b,c))

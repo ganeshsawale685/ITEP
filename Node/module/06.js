@@ -1,0 +1,18 @@
+import fs from "fs";
+
+let readStream = fs.createReadStream("data.txt");
+console.log("At the start....");
+let data = "";
+readStream.on("data",(chunk)=>{
+    console.log(chunk.toString())
+    data = data + chunk;
+});
+
+readStream.on("end",()=>{
+    console.log(data);
+});
+
+readStream.on("error",(err)=>{
+    console.log(err);
+});
+console.log("At the end....");

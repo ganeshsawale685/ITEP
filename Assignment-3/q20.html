@@ -1,0 +1,19 @@
+<!-- 5. WAP to exchange value of two variable without using third variable and arithmetic operator -->
+ <script>
+    //With third variable
+   var a = 5; // Example value 1
+   var b = 10; // Example value 2
+
+console.log("Before swap:");
+console.log("a =", a); // Output: a = 5
+console.log("b =", b); // Output: b = 10
+
+// Swapping the values using XOR : Returns 1 if the corresponding bits are different, and 0 if they are the same.
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+
+console.log("After swap:");
+console.log("a =", a); // Output: a = 10
+console.log("b =", b); // Output: b = 5
+</script>

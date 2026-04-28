@@ -1,0 +1,15 @@
+<!-- 7. W.A.P to find the duplicate element in an array -->
+
+<script>
+    let arr =[1,2,2,3,1,4,5,7,3,6];
+    let arr2 =[]
+
+    for(let i = 0;i<arr.length;i++){
+        for(let j = i;j<arr.length;j++){
+            if(arr[i] == arr[j]){
+                arr2.push(arr[i]);
+            }
+        }
+    }
+    document.write(arr2)
+</script>

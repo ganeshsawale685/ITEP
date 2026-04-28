@@ -1,0 +1,31 @@
+<!-- 
+    A
+   AB
+  A_C
+ A__D
+ABCDE
+ 
+-->
+
+<pre>
+<script>
+    
+    for(let i =1;i<=5;i++){
+        let a = 'A'
+        for(let j=5;j>=i;j--){
+            document.write(" ")
+        }
+        for(let j=1;j<=i;j++){
+
+            if (j==1||j==i||i==5)
+            {
+            document.write(a)
+            }
+            else document.write(" ")
+            a = String.fromCharCode(a.charCodeAt(0)+1)
+
+        }
+document.write("<br>")
+        }
+</script>
+</pre>

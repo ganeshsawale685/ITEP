@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background-color: black;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header div {
+            height: 55px;
+        }
+
+        .left {
+            width: 25%;
+            display: flex;
+        }
+
+        .left img {
+            width: 45%;
+        }
+
+        .left-text {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .mid {
+            width: 40%;
+            display: flex;
+            align-items: center;
+        }
+
+        .mid select {
+            height: 50px;
+            width: 40px;
+        }
+
+        .mid input {
+            width: 420px;
+            height: 45px;
+        }
+
+        .mid div {
+            background-color: orange;
+            width: 52px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            width: 30%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .right div,
+        .right select {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* ================= NAVBAR ================= */
+        nav {
+            background-color: #232F3E;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* ================= BANNER ================= */
+        .banner {
+            height: 500px;
+            background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/CookwareDining/tdhruvko/GW/BAU/Jan26/Updt/LBUnrec3000X1200._CB771752496_.jpg");
+            background-size: cover;
+        }
+
+        /* ================= CARD SECTION ================= */
+        .card-section {
+            background-color: #E3E6E6;
+            margin-top: -250px;
+            padding-bottom: 40px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 20%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .inner-image-div {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .see-more {
+            color: #007185;
+            cursor: pointer;
+        }
+
+        /* ================= BIKE CONTAINER ================= */
+        .container {
+            background-color: white;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        .bikes {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bikes img {
+            height: 120px;
+        }
+
+        /* ================= SLIDER ================= */
+        .slider-container {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slider-header a {
+            color: #007185;
+            font-weight: bold;
+        }
+
+        .slider {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            overflow-x: auto;
+        }
+
+        .slider img {
+            height: 180px;
+        }
+
+        /* ================= FOOTER ================= */
+        .footer {
+            background-color: #232F3E;
+            color: white;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+        }
+
+        .footer-top p {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .footer-top p:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            background-color: #131A22;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="left">
+            <img src="amazonlogo.png">
+            <div class="left-text">
+                <small>Delivering to Bhopal</small>
+                <span>Update location</span>
+            </div>
+        </div>
+
+        <div class="mid">
+            <select></select>
+            <input type="text" placeholder="Search product">
+            <div>🔍</div>
+        </div>
+
+        <div class="right">
+            <select>
+                <option>EN</option>
+            </select>
+            <div><small>Hello, sign in</small><b>Accounts & Lists</b></div>
+            <div><small>Returns</small><b>& Orders</b></div>
+            <div><b>Cart</b></div>
+        </div>
+    </header>
+
+    <nav>
+        <span>All</span><span>MX Player</span><span>Sell</span><span>Bestsellers</span>
+        <span>Today's Deals</span><span>Mobiles</span><span>Prime</span>
+    </nav>
+
+    <section class="banner"></section>
+    <section class="card-section">
+        <div class="row">
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/KitchenAppliances_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/dec/bau/ain/gw/ABdelivery_186_116._SY116_CB776314701_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+            <div class="card">
+                <h2>Bulk order discounts + Up to 18% GST savings</h2>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" />
+                        <small>Upto 40% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/Laptops_186_116_10._SY116_CB777673831_.jpg" />
+                        <small>Upto 50% Off</small>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AmazonBusiness/img25/nov/bau/ain/gw/OfficeChairs_186_116_10._SY116_CB777673831_.jpg"
+                            alt="">
+                        <small>Upto 60% Off</small>
+                    </div>
+                    <div class="inner-image-div">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg"
+                            alt="">
+                        <small>Upto 70% Off</small>
+                    </div>
+                </div>
+                <label style="color: blue;">See more</label>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <h2>Starting ₹70,348 | From daily commutes to weekend thrills</h2>
+            <div class="bikes">
+                <img src="https://m.media-amazon.com/images/I/71zKnIsrqML._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/61BLhBS-1tL._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/71V61d8jm9L._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/71n2GOWccWL._AC_SY200_.jpg" alt="">
+                <img src="https://m.media-amazon.com/images/I/71GvHvqqFKL._AC_SY200_.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-header">
+                <h2>Up to 60% off | Best offers on kitchen products from emerging brands</h2>
+                <a href="#">See all</a>
+            </div>
+
+            <div class="slider">
+                <img src="https://m.media-amazon.com/images/I/71uPyaMfuCL._AC_SY200_.jpg">
+                <img src="https://m.media-amazon.com/images/I/71uPyaMfuCL._AC_SY200_.jpg">
+                <img src="https://m.media-amazon.com/images/I/713ywROGUoL._AC_SY200_.jpg">
+                <img src="https://m.media-amazon.com/images/I/713ywROGUoL._AC_SY200_.jpg">
+                
+                <img src="https://m.media-amazon.com/images/I/81u9aGFhUCL._AC_SY200_.jpg">
+                <img src="https://m.media-amazon.com/images/I/51qOQr5DxpL._AC_SY200_.jpg">
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div>
+                <h4>Get to Know Us</h4>
+                <p>About Us</p>
+                <p>Careers</p>
+            </div>
+            <div>
+                <h4>Connect with Us</h4>
+                <p>Facebook</p>
+                <p>Twitter</p>
+            </div>
+            <div>
+                <h4>Make Money</h4>
+                <p>Sell on Amazon</p>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <p>Your Account</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Amazon Clone by Ganesh
+        </div>
+    </footer>
+
+</body>
+
+</html>

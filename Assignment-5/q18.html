@@ -1,0 +1,20 @@
+<!-- Write a program to display student result (Pass/Fail/Distinction) using switch. -->
+
+<!-- Program to display student result using switch -->
+
+<script>
+    let marks = prompt("Enter student marks (0 - 100)") * 1;
+    
+
+    switch (true) {
+        case (marks >= 75 && marks <= 100):document.write("Distinction :"+marks); break;
+
+        case (marks >= 40 && marks < 75):document.write("Pass :"+marks); break;
+
+        case (marks >= 0 && marks < 40):document.write("Fail :"+marks); break;
+         
+        default:document.write("Invalid Marks");
+            
+    }
+
+</script>

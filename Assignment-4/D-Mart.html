@@ -1,0 +1,220 @@
+<!-- A person enter in a D-Mart mall for the shopping. He is first
+time visiting the D-mart mall. 
+He/She has to purchase 10 items.
+
+System should ask for the name of the customer and Gender.
+
+User will tell you the item name and quantity of each product
+purchased one by one.
+
+You have to calculate the total bill amount on the following 
+Criteria basis
+ 
+ on first product purchase if quantitiy greater then
+ 4 then you have to offer 5% discount on total price of that product
+ 
+ on 5th product purchase you have to offer 10% discount on total
+ price.
+ 
+ on 10th product purchase you have to offer 15% discount on total
+ price of that product. 
+
+ let suppose the cost of 1st product is 10
+ cost of 2nd product is 20
+    .
+    .
+ cost of 10th product is 100;
+
+ if Total Bill amount is greater then 10000 then you have
+ to offer 15% of total bill amount
+ if total Bill amount is between 5000 and 10000 then 
+ you have to offer 10% of total bill amount
+ 
+ Also 10% GST of total Bill Amount
+ 
+ Then you have to ask for carry bag to customer
+ if he/she yes then add 10 rupees in total bill amount.
+ 
+ if the customer is female then you have to gift a Cadeberry
+ If the customer is mael then you have to gift a Ladger Wallet
+ 
+ Develop a Javascript Application to Generate the Bill in 
+ Following Format
+ 
+                         D-Mart
+   Name : Cheeku Sing			Data: 12/9/2022
+   -----------------------------------------------------------
+   Item Name	Quantity    Price	Total   After-Discount		                      
+     Item-1	   5	      10        50 Rs       47.5 Rs
+     Item-2	   3	      20	60 RS       60.0 RS	
+       .
+       .
+       .
+       .
+       .
+       .
+       .
+     Item-10	  20        100         2000       300.0 Rs
+   ----------------------------------------------------------
+                                        A.P	    D.P	
+                                        45000	    43500 
+     Gift :- Cadeberry                  0.00	    0.00
+                                        
+     Carry Bag : yes                    10:00	    10:00
+     GST (10%)	                        450         450
+   ---------------------------------------------------------
+                                        45460       43960 RS
+                                        
+                       Thank You
+                        To Vist
+                         D-Mart                 
+                                          		  
+   ----------------------------------------------------------  
+            -->
+<pre>
+
+
+
+<script>
+    let item = 10;
+    let custName = prompt("Enter customer name");
+    let custGender = prompt("Enter your gender");
+
+    let item_name1 = prompt("Enter the name of item-1 ");
+    let item_quantity1 = prompt("Enter the quantity of item-1") * 1;
+    let item_1price = item_quantity1 * 10;
+
+    let item_name2 = prompt("Enter the name of item-2 ");
+    let item_quantity2 = prompt("Enter the quantity of item-2") * 1;
+    let item_2price = item_quantity2 * 20;
+
+    let item_name3 = prompt("Enter the name of item-3 ");
+    let item_quantity3 = prompt("Enter the quantity of item-3") * 1;
+    let item_3price = item_quantity3 * 30;
+
+    let item_name4 = prompt("Enter the name of item-4 ");
+    let item_quantity4 = prompt("Enter the quantity of item-4") * 1;
+    let item_4price = item_quantity4 * 40;
+
+    let item_name5 = prompt("Enter the name of item-5 ");
+    let item_quantity5 = prompt("Enter the quantity of item-5") * 1;
+    let item_5price = item_quantity5 * 50;
+
+    let item_name6 = prompt("Enter the name of item-6 ");
+    let item_quantity6 = prompt("Enter the quantity of item-6") * 1;
+    let item_6price = item_quantity6 * 60;
+
+    let item_name7 = prompt("Enter the name of item-7 ");
+    let item_quantity7 = prompt("Enter the quantity of item-7") * 1;
+    let item_7price = item_quantity7 * 70;
+
+    let item_name8 = prompt("Enter the name of item-8 ");
+    let item_quantity8 = prompt("Enter the quantity of item-8") * 1;
+    let item_8price = item_quantity8 * 80;
+
+    let item_name9 = prompt("Enter the name of item-9 ");
+    let item_quantity9 = prompt("Enter the quantity of item-9") * 1;
+    let item_9price = item_quantity9 * 90;
+
+    let item_name10 = prompt("Enter the name of item-10 ");
+    let item_quantity10 = prompt("Enter the quantity of item-10") * 1;
+    let item_10price = item_quantity10 * 100;
+   
+
+
+
+
+
+    let totalBill = item_1price + item_2price + item_3price + item_4price + item_5price + item_6price + item_7price + item_8price + item_9price + item_10price;
+    document.write("<br>----------------------------------------------------<br>")
+    
+    let item_1priceDiscount = item_1price;
+    if (item_quantity1 > 4) {
+
+        let discount = (item_1price * 5) / 100;
+        item_1priceDiscount = item_1price - discount;
+    }
+    let item_5priceDiscount = item_5price;
+    if (item_quantity5 > 0) {
+        let discount = (item_5price * 10) / 100;
+        item_5priceDiscount = item_5price - discount;
+    }
+    item_10priceDiscount = item_10price;
+    if (item_quantity10 > 0) {
+        let discount = (item_10price * 15) / 100;
+        item_10priceDiscount = item_10price - discount;
+    }
+
+    document.write("                        D-Mart <br>");
+
+    document.write("Name :" + custName)
+    document.write("                                 Date:23/12/2025")
+    document.write("<br>----------------------------------------------------<br>")
+
+    document.write("<br>Item Name          Quantity               Price         Total Price         After-Discount<br>")
+    document.write(item_name1 + "                " + item_quantity1 + "                   " + "10Rs              " + item_1price + "               " + item_1priceDiscount + " Rs<br>")
+    document.write(item_name2 + "                " + item_quantity2 + "                   " + "20Rs              " + item_2price + "               " + item_2price + " Rs<br>")
+    document.write(item_name3 + "                " + item_quantity3 + "                   " + "30Rs              " + item_3price + "               " + item_3price + " Rs<br>")
+    document.write(item_name4 + "                " + item_quantity4 + "                   " + "40Rs              " + item_4price + "               " + item_4price + " Rs<br>")
+    document.write(item_name5 + "                " + item_quantity5 + "                   " + "50Rs              " + item_5price + "               " + item_5priceDiscount + " Rs<br>")
+    document.write(item_name6 + "                " + item_quantity6 + "                   " + "60Rs              " + item_6price + "               " + item_6price + " Rs<br>")
+    document.write(item_name7 + "                " + item_quantity7 + "                   " + "70Rs              " + item_7price + "               " + item_7price + " Rs<br>")
+    document.write(item_name8 + "                " + item_quantity8 + "                   " + "80Rs              " + item_8price + "               " + item_8price + " Rs<br>")
+    document.write(item_name9 + "                " + item_quantity9 + "                   " + "90Rs              " + item_9price + "               " + item_9price + " Rs<br>")
+    document.write(item_name10 + "              " + item_quantity10 + "                   " + "100R              " + item_10price + "             " + item_10priceDiscount + " Rs<br>")
+
+
+
+
+
+    let discountPrice = item_1priceDiscount + item_2price + item_3price + item_4price + item_5priceDiscount + item_6price + item_7price + item_8price + item_9price + item_10priceDiscount;
+
+    if (totalBill > 10000) {
+        let billDiscount = (totalBill * 15) / 100;
+        totalBill = totalBill - billDiscount;
+
+    }
+
+    if (totalBill > 5000 && totalBill <= 10000) {
+        let billDiscount = (totalBill * 10) / 100;
+        totalBill = totalBill - billDiscount;
+    }
+
+    let GSTAmount = (totalBill * 10) / 100;
+
+    totalBillAfterGST = totalBill + GSTAmount;
+
+
+    document.write("<br>-----------------------------------------------------------------------------<br>")
+    document.write("                                                         AP:Rs" + totalBill + "     DP:Rs" + discountPrice);
+
+
+
+    if (custGender === "female") {
+    document.write("<br>Gift : Cadeberry                                            0.0        0.0 <br>")
+    } else {
+    document.write("<br>Gift : Wallet                                               0.0        0.0 <br>")
+    }
+ 
+    let forCarryBag = prompt("Enter if you need a carry bag (yes/no)");
+    if (forCarryBag == "yes") {
+    document.write("<br>Carry Bag :yes                                            : Rs 10         Rs 10<br>")
+        totalBillAfterGST += 10;
+    } else {
+        document.write("<br>Carry Bag :no : 00")
+    }
+
+    document.write("GST (10%)                                                   :Rs " + GSTAmount + "       " + GSTAmount + "<br>")
+
+
+    totalAmount2 = discountPrice + GSTAmount + 10;
+    document.write("                                                            :Rs " + totalBillAfterGST + "     " + totalAmount2);
+    document.write("<br>----------------------------------------------------<br>")
+    document.write("<br>                                 Thankyou ")
+    document.write("<br>                                 To visit ")
+    document.write("<br>                                  D-Mart")
+
+
+
+</script>
+</pre>

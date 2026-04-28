@@ -1,0 +1,20 @@
+<!-- W.A.P to convert temperature from Fahrenheit to Celsius and Celsius to Fahrenheit. For given problem you have to take choice from user. If user enter choice ‘c’ or ‘C’ then convert Fahrenheit to Celsius. If user enter choice ‘f’ or ‘F’ then convert Celsius to Fahrenheit.  -->
+
+<script>
+     var choice = prompt("Enter your choice:\n'C' to convert Fahrenheit to Celsius\n'F' to convert Celsius to Fahrenheit");
+
+    if (choice === 'C' || choice === 'c') { 
+        // Formula = (32°F − 32) × 5/9 = 0°C
+        var fahrenheit = prompt("Enter temperature in Fahrenheit") * 1;
+        var celsius = (fahrenheit - 32) * 5 / 9;
+        document.write("Fahrenheit "+fahrenheit+"F to " + "Celsius"+celsius+"C" )
+    } 
+    else if (choice === 'F' || choice === 'f') {
+        var celsius = prompt("Enter temperature in Celsius") * 1;
+        var fahrenheit = (celsius * 9 / 5) + 32;
+        document.write("Celsius "+celsius+"C to " + "Fahrenheit"+fahrenheit+"F");
+    } 
+    else {
+        document.write("Invalid choice! Please enter 'C' or 'F'");
+    }
+</script>

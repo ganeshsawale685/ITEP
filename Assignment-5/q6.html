@@ -1,0 +1,20 @@
+<!-- Write a program to create a simple calculator using switch. -->
+ <script>
+    let choice = prompt("Enter a choice \n Enter 1 for Addition \n Enter 2 for Substraction \n Enter 3 for Multiplication \n Enter 4 for Divide")*1;
+
+    if(choice === 1 || choice === 2 || choice === 3 || choice === 4){
+        let a = prompt("Enter first number")*1;
+        let b = prompt("Enter second number")*1;
+
+        switch(choice){
+            case 1 : document.write("Addition (a+b) : "+a +b +" "+ (a+b)) ; break
+            case 2 : document.write("Substraction (a-b) : "+ (a-b)) ; break
+            case 3 : document.write("Multiplication (a*b) : "+ (a*b)) ; break
+            case 4 : document.write("Division (a/b) : "+ (a/b)) ; break
+
+
+        }
+    }else{
+        document.write("You choose wrong number");
+    }
+ </script>

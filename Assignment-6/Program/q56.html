@@ -1,0 +1,28 @@
+<!-- 56) WAP to print factorial of all the numbers between two entered numbers -->
+
+ <script>
+    let num1= prompt("Enter a number");
+    let num2 = prompt("Enter a number");
+    while(num1<= num2){
+    let n = num1;
+    let factorial = 1;
+    document.write("The factorial of "+n +" = ");
+    while(n!=0){
+        factorial = factorial * n;
+        n--;
+    }
+    document.write(factorial+"<br>")
+    num1++;
+    }
+
+    document.write("By For loop<br>");
+let a=prompt("Enter start");
+let b=prompt("Enter end");
+
+for(let i=a;i<=b;i++){
+    let f=1;
+    for(let j=1;j<=i;j++) f*=j;
+    document.write("Factorial of "+i+" = "+f+"<br>");
+}
+    
+ </script>

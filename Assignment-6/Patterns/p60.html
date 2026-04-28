@@ -1,0 +1,28 @@
+<!-- 
+ABCDE
+ ABCD
+  ABC
+   AB
+    A
+ 
+-->
+
+
+<pre>
+<script>
+    let a = 1
+
+    for (let i = 69; i >= 65; i--) {
+        for (let j = 1; j <= a; j++) {
+            document.write(" ");
+        }
+        for (let j = 65; j <= i; j++) {
+
+            document.write(String.fromCharCode(j))
+
+        }
+        document.write("<br>")
+        a++
+    }
+</script>
+</pre>

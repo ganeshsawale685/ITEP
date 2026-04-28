@@ -1,0 +1,19 @@
+<!-- 10.Write a program to check if a year is leap year or not.
+If a year is divisible by 4 then it is leap year but if the year is century year like 2000, 1900, 2100 then it must be divisible by 400.  -->
+<script>
+    var year = prompt("Enter year to check leap year") * 1; // convert to number
+
+    if (year % 100 === 0) { // century year
+        if (year % 400 === 0) {
+            document.write(year + " is a leap year");
+        } else {
+            document.write(year + " is not a leap year");
+        }
+    } else { // non-century year
+        if (year % 4 === 0) {
+            document.write(year + " is a leap year");
+        } else {
+            document.write(year + " is not a leap year");
+        }
+    }
+</script>

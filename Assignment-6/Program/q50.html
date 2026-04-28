@@ -1,0 +1,36 @@
+<!-- 50) WAP to find out all the palindrome numbers between two entered numbers -->
+
+<script>
+    let num1 = prompt("Enter starting number") * 1;
+    let num2 = prompt("Enter ending number") * 1;
+
+    while (num1 <= num2) {
+        let temp = num1;
+        let original = num1;
+        let rev = 0;
+
+        while (temp > 0) {
+            let r = temp % 10;
+            rev = rev * 10 + r;
+            temp = parseInt(temp / 10);
+        }
+
+        if (original == rev) {
+            document.write(original + "<br>");
+        }
+
+        num1++;
+    }
+
+    document.write("By For loop<br>");
+let a=prompt("Enter start");
+let b=prompt("Enter end");
+
+for(let i=a;i<=b;i++){
+    let n=i, r=0;
+    for(;n>0;n=parseInt(n/10)){
+        r=r*10+(n%10);
+    }
+    if(r==i) document.write(i+" ");
+}
+</script>

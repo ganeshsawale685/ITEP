@@ -1,0 +1,33 @@
+<!-- An online store offers:
+
+10% discount if bill ≥ ₹5000
+
+20% discount if bill ≥ ₹10000
+
+Questions:
+
+a) Write a function finalAmount(amount) that returns payable amount.
+b) Why is else if better than multiple if statements? -->
+
+
+<script>
+
+    function finalAmount(amount){
+        if(amount >=5000 && amount <10000){
+            discount = amount * 10/100;
+            amount =amount - discount;
+
+            document.write("You have a discount of 10% Rs "+amount);
+
+
+        }else if(amount >= 10000){
+            discount = amount * 20/100;
+            amount =amount - discount;
+
+            document.write("You have a discount of 20% Rs "+amount);
+        }
+    }
+
+
+    finalAmount(12000);
+</script>

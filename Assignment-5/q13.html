@@ -1,0 +1,14 @@
+<!--Write a program to display movie ticket pricing based on age group using switch  -->
+
+<script>
+
+    let age = prompt("Enter your age ") * 1;
+    switch (true) {
+        case (age > 50): document.write("Ticket Price For You : 1000"); break;
+        case (age > 30 && age <= 50): document.write("Ticket Price For You : 800"); break;
+        case (age > 20 && age <= 30): document.write("Ticket Price For You : 500"); break;
+        case (age > 10 && age <= 20): document.write("Ticket Price For You : 300"); break;
+
+        default: "You entered wrong information";
+    }
+</script>

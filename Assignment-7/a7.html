@@ -1,0 +1,22 @@
+<!-- 7. WAP to search an element in array using binary search. -->
+
+<script>
+    //Binary Search is Applicable only on sorted array
+    let arr = [2,3,6,12,17,21];
+    let st = 0;
+    let end = arr.length-1;
+    let target = 6
+    while(st<=end){
+        let mid = parseInt((st+end)/2);
+        if(arr[mid] == target){
+            document.write("The Target Value is find at the index "+mid )
+
+            break;
+        }else if(arr[mid] > target){
+            end = mid-1;
+        }else{
+            st = mid+1;
+        }
+    }
+
+</script>
